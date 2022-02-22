@@ -21,7 +21,7 @@
         <p><strong>Due to be returned:</strong> {{ copy.due_back }}</p>
       {% endif %}
       <p><strong>Imprint:</strong> {{ copy.imprint }}</p>
-      <p class="text-muted"><strong>Id:</strong> {{ copy.id }}</p>
+      <p class="text-muted"><strong>Id:</strong><a href="/catalog/book/{{ copy.id }}/renew/"> {{ copy.id }}</a></p>
     {% endfor %}
   </div>
 {% endblock %}
